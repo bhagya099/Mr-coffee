@@ -19,6 +19,10 @@ a {
     text-decoration: none;
 }
 
+header {
+    width: 100vw;
+}
+
 
 /* header */
 
@@ -27,7 +31,7 @@ a {
     background-color: var(--nav-color);
     display: flex;
     justify-content: space-between;
-    padding: 1em;
+    padding: 1rem;
     align-items: center;
 }
 
@@ -36,67 +40,68 @@ a {
     margin-left: 1.2em;
 }
 
-.nav-bar .image {
+.nav-bar .logo-image {
     width: 10em;
 }
 
 .heading_image {
-    width: 10em;
-    position: absolute;
-    left: 46%;
-    margin: auto;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.nav-bar .hamburger {
+.heading_image img {
+    width: 10em;
+}
+
+.nav-bar .nav-checkbox,
+.nav-button {
     display: none;
 }
 
-@media only screen and (max-width:700px) {
-    body {
+@media only screen and (max-width:570px) {
+    /* body {
         background-color: black;
-    }
-    .nav-bar ul {
-        display: none;
-    }
-    .nav-bar .nav-checkbox:checked {
-        transform: scale(80);
+    } */
+    /* for hamburger menu */
+    .nav-bar nav {
+        opacity: 0;
     }
     .nav-bar .nav-button {
-        background-color: white;
-        height: 7rem;
-        width: 7rem;
-        position: fixed;
-        top: 6rem;
-        right: 6rem;
+        display: inline;
+    }
+    .nav-bar nav ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 40%;
+        background-color: var(--nav-color);
+        margin: 2.6rem;
+    }
+    .nav-bar nav ul li {
+        padding: 1rem;
+    }
+    .nav-bar .nav-button {
+        background-color: #bdccdb;
+        height: 2rem;
+        width: 2rem;
+        position: absolute;
+        top: 40%;
+        left: 90%;
         border-radius: 50%;
-        z-index: 2000;
-        box-shadow: 0 1rem 3rem rgba(black, .1);
         text-align: center;
         cursor: pointer;
     }
-    .nav-icon,
-    .nav-icon::before,
-    .nav-icon::after {
-        width: 3rem;
-        height: 2px;
-        background-color: white;
-        display: inline-block;
+    .nav-icon {
+        position: relative;
+        top: 20%;
+        /* opacity: 0; */
     }
-    .nav-icon::before,
-    .nav-icon::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        transition: all .2s;
+    .nav-bar .nav-checkbox:checked~nav {
+        opacity: 1;
+        z-index: 1;
     }
-    .nav-icon::before {
-        top: -.8rem
-    }
-    .nav-icon::after {
-        top: .8rem
-    }
+    /* for heading image */
 }
-
-
-/* for hamburger menu */

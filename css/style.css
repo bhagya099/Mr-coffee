@@ -6,7 +6,8 @@
 
 :root {
     --background-color: #F2F2F2;
-    --nav-color: #6a7b8b;
+    --primary-color: #6a7b8b;
+    --secondary-color: rgb(99, 93, 93);
     --white: #fff;
     --card-background-color: #92a7ba9c;
 }
@@ -39,7 +40,7 @@ header {
 
 .nav-bar {
     position: relative;
-    background-color: var(--nav-color);
+    background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
     padding: 1rem;
@@ -144,7 +145,7 @@ header {
 }
 
 .btn {
-    background-color: var(--nav-color);
+    background-color: var(--primary-color);
     color: var(--white);
     padding: 1rem;
     margin-top: 2rem;
@@ -196,7 +197,7 @@ h5 {
 }
 
 .open-days-info .aside1 h3 {
-    color: rgb(99, 93, 93);
+    color: var(--secondary-color);
     text-align: center;
     margin-bottom: 2rem;
 }
@@ -216,7 +217,7 @@ h5 {
 }
 
 .open-days-info .aside2 h3 {
-    color: rgb(99, 93, 93);
+    color: var(--secondary-color);
     text-align: center;
     margin-bottom: 2rem;
 }
@@ -232,7 +233,7 @@ h5 {
 }
 
 .discover-program .last-info h4 {
-    color: rgb(99, 93, 93);
+    color: var(--secondary-color);
     text-align: center;
     padding: 2rem;
 }
@@ -242,13 +243,31 @@ h5 {
 }
 
 
+/* for contact page */
+
+.contact-main {
+    width: 70%;
+    margin: auto;
+    color: var(--secondary-color);
+}
+
+.contact-main h2 {
+    text-align: center;
+}
+
+.contact-main address,
+img {
+    padding: 2rem;
+}
+
+
 /* footer style */
 
 footer {
     display: flex;
     /* flex-wrap: wrap; */
     align-items: center;
-    background-color: var(--nav-color);
+    background-color: var(--primary-color);
     position: relative;
     bottom: 0;
     width: 100vw;
@@ -314,7 +333,7 @@ footer .img {
         top: 50%;
         left: 50%;
         width: 40%;
-        background-color: var(--nav-color);
+        background-color: var(--primary-color);
         margin: 2.6rem;
     }
     .nav-bar nav ul li {

@@ -22,7 +22,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 a {
@@ -191,7 +191,6 @@ h5 {
 }
 
 .open-days-info .aside1 {
-    /* background-color: red; */
     width: 400px;
     margin-right: 3rem;
 }
@@ -269,6 +268,32 @@ footer .img {
 .social-icon {
     margin-top: 1rem;
     margin-left: 30%;
+}
+
+
+/* abour page style  */
+
+.box {
+    display: flex;
+    margin: 2rem;
+}
+
+.first-side {
+    padding: 3rem;
+}
+
+.first-side h2 {
+    margin-bottom: 4rem;
+}
+
+.first-side p {
+    margin-top: 1.8rem;
+    font-size: .8em;
+}
+
+.second-side img {
+    width: 20rem;
+    margin-top: 3.1rem;
 }
 
 

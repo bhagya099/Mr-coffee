@@ -246,7 +246,7 @@ h5 {
 /* for contact page */
 
 .contact-main {
-    width: 70%;
+    width: 50%;
     margin: auto;
     color: var(--secondary-color);
 }
@@ -256,8 +256,34 @@ h5 {
 }
 
 .contact-main address,
-img {
+.contact-image {
     padding: 2rem;
+}
+
+
+/* abour page style  */
+
+.box {
+    display: flex;
+    margin: 2rem;
+}
+
+.first-side {
+    padding: 3rem;
+}
+
+.first-side h2 {
+    margin-bottom: 4rem;
+}
+
+.first-side p {
+    margin-top: 1.8rem;
+    font-size: .8em;
+}
+
+.second-side img {
+    width: 20rem;
+    margin-top: 3.1rem;
 }
 
 
@@ -290,41 +316,12 @@ footer .img {
 }
 
 
-/* abour page style  */
-
-.box {
-    display: flex;
-    margin: 2rem;
-}
-
-.first-side {
-    padding: 3rem;
-}
-
-.first-side h2 {
-    margin-bottom: 4rem;
-}
-
-.first-side p {
-    margin-top: 1.8rem;
-    font-size: .8em;
-}
-
-.second-side img {
-    width: 20rem;
-    margin-top: 3.1rem;
-}
-
-
 /* media screen for small screen  */
 
 @media only screen and (max-width:600px) {
     /* for hamburger menu */
     .nav-bar nav {
         opacity: 0;
-    }
-    .nav-bar .nav-button {
-        display: inline;
     }
     .nav-bar nav ul {
         display: flex;
@@ -340,6 +337,7 @@ footer .img {
         padding: 1rem;
     }
     .nav-bar .nav-button {
+        display: inline;
         background-color: #bdccdb;
         height: 2rem;
         width: 2rem;
@@ -353,7 +351,6 @@ footer .img {
     .nav-icon {
         position: relative;
         top: 20%;
-        /* opacity: 0; */
     }
     .nav-bar .nav-checkbox:checked~nav {
         opacity: 1;
@@ -362,7 +359,7 @@ footer .img {
     /* for images navbar and footer */
     .nav-bar .logo-image,
     .heading_image img {
-        width: 6rem;
+        width: 10rem;
     }
     /* discover section h2 */
     .discover-section h2 {
@@ -387,5 +384,14 @@ footer .img {
         position: relative;
         bottom: 0;
         width: 100vw;
+    }
+    /* for contact page */
+    .contact-main {
+        width: 50%;
+        margin: auto;
+        color: var(--secondary-color);
+    }
+    .contact-image {
+        width: 100%;
     }
 }

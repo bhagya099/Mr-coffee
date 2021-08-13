@@ -31,10 +31,6 @@ a {
     text-decoration: none;
 }
 
-header {
-    width: 100vw;
-}
-
 
 /* header */
 
@@ -263,6 +259,10 @@ h5 {
     padding: 2rem;
 }
 
+.contact-image {
+    width: 100%;
+}
+
 
 /* about page style  */
 
@@ -298,7 +298,6 @@ footer {
     background-color: var(--primary-color);
     position: relative;
     bottom: 0;
-    width: 100vw;
     max-height: 20rem;
 }
 
@@ -322,23 +321,28 @@ footer .img {
 /* media screen for small screen  */
 
 @media only screen and (max-width:768px) {
+    body {
+        width: 100vw;
+    }
     /* for hamburger menu */
     .nav-bar nav {
         opacity: 0;
     }
+    /* giving navbar to style how it will look in this screen size */
     .nav-bar nav ul {
         display: flex;
         flex-direction: column;
         position: absolute;
         top: 50%;
-        left: 40%;
-        width: 50%;
+        left: 30%;
+        width: 60%;
         background-color: var(--primary-color);
         margin: 2.6rem;
     }
     .nav-bar nav ul li {
         padding: 1rem;
     }
+    /* make label a circle */
     .nav-bar .nav-button {
         display: inline;
         background-color: #bdccdb;
@@ -351,6 +355,7 @@ footer .img {
         text-align: center;
         cursor: pointer;
     }
+    /* put icon in circle */
     .nav-icon {
         position: relative;
         top: 20%;
@@ -367,31 +372,23 @@ footer .img {
     /* card section */
     .card-section {
         flex-direction: column;
-        margin: auto;
-        margin: 2rem;
     }
     .card {
-        width: 80%;
+        width: 100%;
         margin: 1rem;
     }
     .open-days-info {
         flex-direction: column;
     }
+    .open-days-info p,
+    h3 {
+        width: 100%;
+    }
     /* footer  */
     footer {
-        position: relative;
-        bottom: 0;
         width: 100vw;
     }
     /* for contact page */
-    .contact-main {
-        width: 50%;
-        margin: auto;
-        color: var(--secondary-color);
-    }
-    .contact-image {
-        width: 100%;
-    }
     /* for about page  */
     .box {
         flex-direction: column-reverse;

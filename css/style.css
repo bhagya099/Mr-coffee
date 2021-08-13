@@ -79,11 +79,14 @@ a {
 
 /* discover section style */
 
+.discover-section {
+    position: relative;
+}
+
 .discover-section img {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     width: 100%;
 }
 

@@ -250,7 +250,7 @@ h5 {
 
 .contact-main {
     width: 50%;
-    margin: auto;
+    margin: 0 auto;
     color: var(--secondary-color);
 }
 
@@ -264,7 +264,7 @@ h5 {
 }
 
 
-/* abour page style  */
+/* about page style  */
 
 .box {
     display: flex;
@@ -390,6 +390,13 @@ footer .img {
         color: var(--secondary-color);
     }
     .contact-image {
+        width: 100%;
+    }
+    /* for about page  */
+    .box {
+        flex-direction: column-reverse;
+    }
+    .second-side img {
         width: 100%;
     }
 }

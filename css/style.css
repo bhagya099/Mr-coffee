@@ -248,7 +248,7 @@ h5 {
 /* for contact page */
 
 .contact-main {
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
     color: var(--secondary-color);
 }
@@ -337,11 +337,10 @@ footer .img {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 50%;
-        left: 30%;
+        top: 100%;
+        left: 50%;
         width: 60%;
         background-color: var(--primary-color);
-        margin: 2.6rem;
     }
     .nav-bar nav ul li {
         padding: 1rem;
@@ -399,10 +398,5 @@ footer .img {
     }
     .second-side img {
         width: 100%;
-    }
-    /* for google image */
-    .contact-image {
-        width: 130%;
-        height: 450px;
     }
 }

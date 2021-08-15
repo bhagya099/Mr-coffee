@@ -81,13 +81,13 @@ a {
 
 .discover-section {
     position: relative;
-}
-
-.discover-section img {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+}
+
+.discover-section img {
+    width: 89%;
 }
 
 .discover-section h2 {
@@ -257,6 +257,11 @@ h5 {
     text-align: center;
 }
 
+.contact-main h3 {
+    color: #000;
+    font-weight: bold;
+}
+
 .contact-main address,
 .contact-image {
     padding: 2rem;
@@ -392,6 +397,9 @@ footer .img {
         width: 100vw;
     }
     /* for contact page */
+    /* .contact-image {
+        width: 90%;
+    } */
     /* for about page  */
     .box {
         flex-direction: column-reverse;

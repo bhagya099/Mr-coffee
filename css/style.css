@@ -267,33 +267,44 @@ h5 {
     padding: 2rem;
 }
 
-.contact-image {
+
+/* .contact-image {
     width: 100%;
     height: 450px;
+} */
+
+iframe {
+    width: 100%;
+    height: 450px;
+    border: 1px solid black;
+    margin-bottom: 1rem;
 }
 
 
 /* about page style  */
+
+
+/* for both about section */
 
 .box {
     display: flex;
     margin: 2rem;
 }
 
-.first-side {
+.text-side {
     padding: 3rem;
 }
 
-.first-side h2 {
+.text-side h2 {
     margin-bottom: 4rem;
 }
 
-.first-side p {
+.text-side p {
     margin-top: 1.8rem;
     font-size: .8em;
 }
 
-.second-side img {
+.image-side img {
     width: 20rem;
     margin-top: 3.1rem;
 }
@@ -396,15 +407,12 @@ footer .img {
     footer {
         width: 100vw;
     }
-    /* for contact page */
-    /* .contact-image {
-        width: 90%;
-    } */
     /* for about page  */
     .box {
         flex-direction: column-reverse;
     }
-    .second-side img {
-        width: 100%;
-    }
+    /* .image-side img {
+        width: 80%;
+        margin-left: 2rem;
+    } */
 }

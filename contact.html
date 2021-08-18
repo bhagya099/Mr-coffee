@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <!-- font awesoem CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-
+    <!-- JS file -->
+    <script src="./js/form.js" defer></script>
     <title>Contact</title>
 </head>
 
@@ -42,9 +44,14 @@
     <main>
         <!-- for contact form  -->
         <section class="form-section">
-            <form name="contact-form" method="POST" action="thankyou.html">
-
-
+            <form id="contact-form">
+                <!-- last name -->
+                <label for="last_name">Nom *</label>
+                <input type="text" id="last_name" name="LastName" class="form_input" placeholder="Enter you last name">
+                <!-- first name -->
+                <label for="first_name">Prénom *</label>
+                <input type="text" id="first_name" name="FirstName" class="form_input" placeholder="Enter you first name">
+                <button>Submit</button>
             </form>
 
         </section>

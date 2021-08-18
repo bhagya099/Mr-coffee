@@ -248,23 +248,59 @@ h5 {
 
 /* for contact page */
 
-main {
+.contact-main {
     width: 80%;
     margin: 0 auto;
     color: var(--secondary-color);
+    padding: 2rem;
 }
 
 .contact-main h2 {
     text-align: center;
+    margin-bottom: 2rem;
 }
+
+
+/* for contact form  */
+
+.form-section {
+    margin: 2rem;
+    width: 100%;
+}
+
+.form-label {
+    display: block;
+    margin-top: 2rem;
+}
+
+.form_input {
+    width: 90%;
+    border: 1px solid lightgray;
+    padding: 5px;
+    margin-top: 2px;
+    background-color: var(--card-background-color);
+}
+
+
+/* for all the input height */
+
+input {
+    height: 2rem;
+}
+
+
+/* for textarea height */
+
+textarea {
+    height: 5rem;
+}
+
+
+/* for contact address */
 
 address p:first-child {
     color: #000;
     font-weight: bold;
-}
-
-.contact-main {
-    padding: 2rem;
 }
 
 address,

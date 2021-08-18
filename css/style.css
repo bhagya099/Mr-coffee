@@ -258,7 +258,7 @@ main {
     text-align: center;
 }
 
-.contact-main h3 {
+address p:first-child {
     color: #000;
     font-weight: bold;
 }

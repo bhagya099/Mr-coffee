@@ -287,6 +287,19 @@ a {
 }
 
 
+/* for valid-form  */
+
+.is-valid {
+    color: green;
+    /* display: none; */
+}
+
+.nonValid {
+    color: red;
+    /* display: none; */
+}
+
+
 /* for all the input height */
 
 input {
@@ -511,8 +524,4 @@ footer .img {
     .box {
         flex-direction: column-reverse;
     }
-    /* .image-side img {
-        width: 80%;
-        margin-left: 2rem;
-    } */
 }

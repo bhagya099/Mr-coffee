@@ -10,14 +10,12 @@ const btnCloseModal = document.querySelector(".close-modal");
 const modal = document.querySelector(".modal");
 const valid = document.querySelector(".is-valid");
 const nonValid = document.querySelector(".nonValid");
-console.log(nonValid);
-// regexr
-// /^[A-Za-z0-9\._\-]+@[A-Za-z]+[A-Za-z0-9\-]+[A-Za-z]+(\.[A-Za-z0-9\-]+)+
+
 // for email
 const validEmail =
-    /^[A-Za-z0-9\._\-]+@[A-Za-z]+[A-Za-z0-9\-]+[A-Za-z]+(\.[A-Za-z0-9\-]+)+$/gi;
+    /^[A-Za-z0-9\._\-]+@[A-Za-z]+[A-Za-z0-9\-]+[A-Za-z]+(\.[A-Za-z0-9\-]+)+$/;
 // for name
-const validName = /^[A-Za-zÀ-ÖØ-öø-ÿ0-9 \.'\-]+$/gi;
+const validName = /^[A-Za-zÀ-ÖØ-öø-ÿ0-9 \.'\-]+$/;
 
 form.setAttribute("nonvalidate", true);
 
@@ -26,33 +24,26 @@ form.onsubmit = submitForm;
 function submitForm(e) {
     e.preventDefault();
     // for validation
-    let validateForm = 0;
-    console.log(
-        `${message.value},${phone.value},${firstName.value},${lastName.value},${email.value},${phone.value}`
-    );
-    console.log(validInput(validName, firstName));
-    console.log(validInput(validName, lastName));
-    if (validInput(validName, firstName)) {
-        nonValid.classList.remove("hidden");
-    } else {
-        nonValid.classList.remove("hidden");
-    }
-    // } else {
-    //     console.log('nonvalid');
-    //     // lastName.classList.remove('is-valid');
-    //     // lastName.classList.add('nonValid');
-    //     nonValid.setAttribute('style', "display:block")
-    //     validateForm++;
-    // }
 
-    openModal();
+    if (
+        validInput(validName, firstName) &&
+        validInput(validName, lastName) &&
+        validInput(validEmail, email)
+    ) {
+        console.log(
+            `Firstname : ${firstName.value} \nLastName:${lastName.value} \nEmail:${email.value} \nPhone:${phone.value} \n`
+        );
+        openModal();
+    } else {
+        console.log(`Please put valid things`);
+    }
 }
 
 // validation function
 function validInput(regex, input) {
+    // return true if test is match
     return regex.test(input.value);
 }
-
 
 // for opening modal
 const openModal = function() {
@@ -61,6 +52,7 @@ const openModal = function() {
 // for closing modal
 const closeModal = function() {
     modal.classList.add("hidden");
+    form.reset();
 };
 // use close function closing button
 btnCloseModal.addEventListener("click", closeModal);

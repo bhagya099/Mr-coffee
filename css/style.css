@@ -533,9 +533,9 @@ footer .img {
         width: 100vw;
     }
     /* btn */
-    .btn {
-        margin: 2rem;
+    .submit-btn {
         width: 50%;
+        margin-left: 4rem;
     }
     /* for about page  */
     .box {

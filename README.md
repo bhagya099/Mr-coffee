@@ -13,6 +13,6 @@ I learn a lot New things while doing this project"
 
 
 
-Difficulty also Learning : When i start amking Hamburger menu for smaller screen using CSS. It was difficult to me but then I keep continue to amke that "google" it. Then i was able to make it on time. I learnt that we can make hamburge menu using CSS only.
+Difficulty also Learning : When I start making Hamburger menu for smaller screen using CSS. It was difficult to me but then I keep continue to make that "google" it. Then I was able to make it on time. I learnt that we can make hamburge menu using CSS only.
 
 Future: Want to add contact form in Contact page" so anyone can contact the owner"

@@ -27,17 +27,15 @@ function submitForm(e) {
     e.preventDefault();
     // for validation
     let validateForm = 0;
-    // console.log(
-    //     `${message.value},${phone.value},${firstName.value},${lastName.value},${email.value},${phone.value}`
-    // );
+    console.log(
+        `${message.value},${phone.value},${firstName.value},${lastName.value},${email.value},${phone.value}`
+    );
     console.log(validInput(validName, firstName));
     console.log(validInput(validName, lastName));
     if (validInput(validName, firstName)) {
-        console.log(lastName.value);
-        console.log(nonValid);
-        nonValid.setAttribute("style", "border: #EC3A0E solid 3px ");
+        nonValid.classList.remove("hidden");
     } else {
-        console.log("hi");
+        nonValid.classList.remove("hidden");
     }
     // } else {
     //     console.log('nonvalid');
@@ -47,7 +45,7 @@ function submitForm(e) {
     //     validateForm++;
     // }
 
-    // openModal();
+    openModal();
 }
 
 // validation function

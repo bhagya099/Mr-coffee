@@ -81,18 +81,24 @@ a {
 
 /* main section */
 
+.home_html {
+    margin: 2rem;
+}
+
 
 /* discover section style */
 
 .discover-section {
     position: relative;
+    /* width: 90%;
+    margin: auto; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .discover-section img {
-    width: 89%;
+    width: 100%;
 }
 
 .discover-section h2 {
@@ -113,7 +119,7 @@ a {
 
 .things {
     text-align: center;
-    margin: 2rem;
+    margin-top: 1rem;
 }
 
 .things h2 span {
@@ -126,7 +132,7 @@ a {
 .card-section {
     display: flex;
     justify-content: space-between;
-    padding: 2rem;
+    margin: 1rem 0;
 }
 
 
@@ -522,7 +528,7 @@ footer .img {
     }
     .card {
         width: 100%;
-        margin: 1rem;
+        margin: 1rem 0;
     }
     .open-days-info {
         flex-direction: column;

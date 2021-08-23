@@ -180,7 +180,7 @@ a {
 }
 
 .submit-btn {
-    margin-left: 33%;
+    margin-left: 30%;
 }
 
 
@@ -386,6 +386,10 @@ textarea {
     margin: 2rem;
 }
 
+.formar-btn {
+    width: auto;
+}
+
 
 /* for contact address */
 
@@ -538,8 +542,8 @@ footer .img {
     }
     /* btn */
     .submit-btn {
-        width: 50%;
-        margin-left: 4rem;
+        width: 60%;
+        margin-left: 20%;
     }
     /* for about page  */
     .box {

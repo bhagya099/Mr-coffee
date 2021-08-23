@@ -448,9 +448,10 @@ footer {
 }
 
 footer .img {
-    margin-left: 1rem;
-    width: 3rem;
+    position: absolute;
+    margin: 1rem;
     height: 3rem;
+    object-fit: contain;
 }
 
 .footer-img {
@@ -460,7 +461,9 @@ footer .img {
 
 .social-icon {
     margin-top: 1rem;
-    margin-left: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 
@@ -540,5 +543,9 @@ footer .img {
     /* for about page  */
     .box {
         flex-direction: column-reverse;
+    }
+    /* for second box display */
+    .box:nth-child(even) {
+        flex-direction: column;
     }
 }

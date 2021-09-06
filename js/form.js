@@ -17,7 +17,7 @@ const validEmail =
 // for name
 const validName = /^[A-Za-zÀ-ÖØ-öø-ÿ0-9 \.'\-]+$/;
 
-form.setAttribute("nonvalidate", true);
+form.setAttribute("novalidate", true);
 
 form.onsubmit = submitForm;
 

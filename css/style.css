@@ -170,6 +170,8 @@ a {
 /* for card-section button */
 
 .btn {
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--primary-color);
     color: var(--white);
     padding: 1rem;
@@ -266,6 +268,7 @@ a {
 
 .contact-main {
     width: 80%;
+    max-width: 960px;
     margin: 0 auto;
     color: var(--secondary-color);
 }
@@ -465,7 +468,10 @@ footer .img {
 }
 
 .social-icon {
-    margin: 1rem auto 0 auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin: 1rem auto 0 auto; */
     text-align: center;
 }
 
@@ -536,13 +542,8 @@ footer .img {
     }
     /* footer  */
     .social-icon {
-        margin-right: 3rem;
+        /* margin-right: 3rem; */
         text-align: center;
-    }
-    /* btn */
-    .submit-btn {
-        width: 60%;
-        margin-left: 20%;
     }
     /* for about page  */
     .box {
